@@ -1,0 +1,50 @@
+# https://github.com/github/gitignore/blob/master/C%2B%2B.gitignore
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables/binaries
+*.exe
+*.out
+*.app
+*.bin
+
+########################################
+
+# Doxygen output (if any)
+html/
+latex/
+
+# skip obj folder for oF projects
+obj/
+
+#Skip gedit temp files
+*~
+
+# Skip vim temp files
+*.swp
