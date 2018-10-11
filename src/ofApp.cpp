@@ -1,21 +1,21 @@
 #include "ofApp.h"
 #include <fstream>
-
+using namespace std;
 
 void ofApp::setup(){
      auto name = std::getenv("myfile");
      auto filename = name? name: "input.jpg";
+	cout << "Hello from setup"<<endl;
 
      img.load(filename);
  
      x = abs(img.getWidth() - ofGetWidth())/2;
      y = abs(img.getHeight() - ofGetHeight())/2;
 
-     /*
-       (A)
+     
 
        n =  3 * img.getWidth() * img.getHeight();
-     */
+     
 }
 
 
@@ -35,15 +35,19 @@ void ofApp::keyPressed(int key){
 
     if (key == 'i') 
           { 
+		cout<<"i has been pressed"<<endl;
  
-             /*  
-                (B)
+             
 
                 for(int i = 0 ;i < n; i++)
                  img.setColor(i, img.getColor(i).invert());
-             */ 
+              
            img.update();
            }//end if
+	if (key == 'A')
+	{
+		cout<<"A key has been pressed"<<endl;
+	}
 }
 
 
